@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+
+    *{
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .d-none{
+      display:none;
+    }
+
+    .error{
+      border:2px solid red;
+    }
+
+    .password-box{
+      position:relative;
+    }
+
+    .show-btn{
+      position:absolute;
+      right:10px;
+      top:50%;
+      transform:translateY(-50%);
+      width:auto;
+      padding:3px 10px;
+      font-size:12px;
+    }
+
+  </style>
+</head>
+
+<body class="bg-light">
+
+<h1 class="text-center mt-4">
+  Registration Form
+</h1>
+
+
+<form class="form container mt-5 p-4 bg-white shadow rounded" style="max-width:550px;">
+
+  <!-- First Name -->
+  <div class="mb-3">
+
+    <label class="form-label">
+      First Name
+    </label>
+
+    <input 
+    data-key="firstName"
+    type="text"
+    class="form-control"
+    placeholder="Enter First Name">
+
+    <span class="error-message text-danger">
+      Name must contain alphabets
+    </span>
+
+    <span class="empty-field text-danger">
+      Please fill this field
+    </span>
+
+  </div>
+
+
+
+  <!-- Last Name -->
+  <div class="mb-3">
+
+    <label class="form-label">
+      Last Name
+    </label>
+
+    <input 
+    data-key="lastName"
+    type="text"
+    class="form-control"
+    placeholder="Enter Last Name">
+
+    <span class="error-message text-danger">
+      Name must contain alphabets
+    </span>
+
+    <span class="empty-field text-danger">
+      Please fill this field
+    </span>
+
+  </div>
+
+
+
+  <!-- Email -->
+  <div class="mb-3">
+
+    <label class="form-label">
+      Email
+    </label>
+
+    <input 
+    data-key="email"
+    type="email"
+    class="form-control"
+    placeholder="Enter Email">
+
+    <span class="error-message text-danger">
+      Invalid Email
+    </span>
+
+    <span class="empty-field text-danger">
+      Please fill this field
+    </span>
+
+  </div>
+
+
+
+  <!-- Password -->
+  <div class="mb-3">
+
+    <label class="form-label">
+      Password
+    </label>
+
+    <div class="password-box">
+
+      <input 
+      data-key="password"
+      type="password"
+      class="form-control password-input"
+      placeholder="Enter Password">
+
+      <button 
+      type="button"
+      class="show-btn btn btn-outline-secondary">
+
+        Show
+
+      </button>
+
+    </div>
+
+    <ul class="error-message list-group mt-3">
+
+      <li class="list-group-item text-danger">
+        Password must contain atleast 8 characters
+      </li>
+
+      <li class="list-group-item text-danger">
+        Password must contain atleast 1 digit
+      </li>
+
+      <li class="list-group-item text-danger">
+        Password must contain atleast 1 special character
+      </li>
+
+      <li class="list-group-item text-danger">
+        Password must contain atleast 1 lowercase letter
+      </li>
+
+      <li class="list-group-item text-danger">
+        Password must contain atleast 1 uppercase letter
+      </li>
+
+    </ul>
+
+    <span class="empty-field text-danger">
+      Please fill this field
+    </span>
+
+  </div>
+
+
+
+  <button type="button" class="button btn btn-primary w-100">
+
+    Create Account
+
+  </button>
+
+</form>
+
+<script src="practice.js"></script>
+
+</body>
+</html>
