@@ -1,0 +1,2 @@
+# validLoginPage
+using event delegation
